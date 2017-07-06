@@ -1,0 +1,62 @@
+#mabloq-nav {
+  padding: 50px;
+  text-align: center; }
+  #mabloq-nav ul {
+    list-style: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #f75f06; }
+    #mabloq-nav ul li {
+      float: left;
+      width: 150px;
+      height: 65px;
+      line-height: 65px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer; }
+
+ul.mabloq-nav-dropdown {
+  display: inline-block; }
+
+ul.mabloq-nav-dropdown li {
+  display: none; }
+
+ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
+  display: block; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+#hero {
+  background-image: url(./images/hero.jpg);
+  height: 500px; }
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 72px;
+  font-weight: bold; }
