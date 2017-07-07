@@ -7,8 +7,8 @@ class Nav extends Component {
       <nav id="mabloq-nav">
         <ul>
           <li>Home</li>
-          <li>
-            <ul className="mabloq-nav-dropdown">Blog
+          <li> Blog
+            <ul className="mabloq-nav-dropdown">
               <li>Code</li>
               <li>Design</li>
               <li>Misc</li>
