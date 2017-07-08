@@ -5,7 +5,7 @@ import {createStore, applyMiddleware} from 'redux';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import promise from 'redux-promise';
 import './index.css';
-import './App.min.css';
+import './App.css';
 
 import HomePage from './containers/home_page';
 import reducers from './reducers';

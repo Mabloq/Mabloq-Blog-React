@@ -1,13 +1,11 @@
 #mabloq-nav {
-  padding: 50px;
+  padding: 10px;
   text-align: center; }
   #mabloq-nav ul {
     list-style: none;
-    border-radius: 5px;
     padding: 0;
     margin: 0;
-    display: inline-block;
-    background: #f75f06; }
+    display: inline-block; }
     #mabloq-nav ul li {
       float: left;
       width: 150px;
@@ -19,13 +17,17 @@
       color: #ffffff;
       cursor: pointer; }
 
-ul.mabloq-nav-dropdown {
-  display: inline-block; }
+ul.mabloq-nav-dropdown li {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff; }
+  ul.mabloq-nav-dropdown li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
 
 ul.mabloq-nav-dropdown li {
   display: none; }
 
-ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
+li:hover ul.mabloq-nav-dropdown li {
   display: block; }
 
 .App {
@@ -59,4 +61,5 @@ ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
   text-align: center;
   color: white;
   font-size: 72px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 125px; }

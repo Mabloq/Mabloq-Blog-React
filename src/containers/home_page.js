@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../components/nav_hero';
-import Blog from '../components/blog_item';
+// import Blog from '../components/blog_item';
 
 
 class HomePage extends Component {
@@ -9,7 +9,7 @@ class HomePage extends Component {
     return (
       <div id="hero">
         <Nav />
-        <h2 className="hero-title">Mabloq</h2>
+        <h1 className="hero-title">Mabloq</h1>
       </div>
     );
   }

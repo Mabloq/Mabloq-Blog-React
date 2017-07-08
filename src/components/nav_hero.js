@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Link from "react-router-dom";
 class Nav extends Component {
 
   render() {
@@ -7,13 +7,7 @@ class Nav extends Component {
       <nav id="mabloq-nav">
         <ul>
           <li>Home</li>
-          <li>
-            <ul className="mabloq-nav-dropdown">Blog
-              <li>Code</li>
-              <li>Design</li>
-              <li>Misc</li>
-            </ul>
-          </li>
+          <li>Blog</li>
           <li>Portfolio</li>
           <li>About</li>
         </ul>
