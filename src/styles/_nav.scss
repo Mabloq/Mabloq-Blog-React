@@ -1,0 +1,33 @@
+#mabloq-nav {
+  padding: 10px;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+    li {
+      float: left;
+      width: 150px;
+      height: 65px;
+      line-height: 65px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+ul.mabloq-nav-dropdown {
+  display: inline-block;
+}
+ul.mabloq-nav-dropdown li {
+  display: none;
+}
+ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
+  display: block;
+}
