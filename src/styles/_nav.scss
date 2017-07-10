@@ -19,6 +19,22 @@
       font-size: 14px;
       color: #ffffff;
       cursor: pointer;
+      a {
+        color: #ffffff;
+        padding: 10px;
+        &:hover {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        &:visited {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        &:focus {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

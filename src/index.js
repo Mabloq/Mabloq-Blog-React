@@ -8,6 +8,7 @@ import './index.css';
 import './App.css';
 
 import HomePage from './containers/home_page';
+import Portfolio from './pages/portfolio';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -17,6 +18,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
+          <Route path="/portfolio" component={Portfolio} />
           <Route path="/" component={HomePage} />
         </Switch>
       </div>

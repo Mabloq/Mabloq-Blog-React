@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import _ from 'lodash';
-const defaultProps = {
-  initialPage: 1
-}
+// const defaultProps = {
+//   initialPage: 1
+// }
 
 class Pagination extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class Pagination extends Component {
     //get a new page of iems from items array
     let pageOfItems = Object.keys(items).map(key => items[key])
       .filter(val => val.id >= pager.startIndex && val.id <= pager.endIndex);
-    console.log(pageOfItems);
+
     //call change page function from parent component
     this.props.onChangePage(pageOfItems);
   }
@@ -54,7 +54,7 @@ class Pagination extends Component {
 
     // calculate total pages
     var totalPages = Math.ceil(totalItems / pageSize);
-    console.log(totalPages);
+    
     var startPage, endPage;
     if (totalPages <= 10) {
         // less than 10 total pages so show all
@@ -127,5 +127,5 @@ class Pagination extends Component {
   }
 
 }
-Pagination.defaultProps
+// Pagination.defaultProps;
 export default Pagination;

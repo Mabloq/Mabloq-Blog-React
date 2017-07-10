@@ -17,6 +17,18 @@
       font-size: 14px;
       color: #ffffff;
       cursor: pointer; }
+      #mabloq-nav ul li a {
+        color: #ffffff;
+        padding: 10px; }
+        #mabloq-nav ul li a:hover {
+          color: #ffffff;
+          text-decoration: none; }
+        #mabloq-nav ul li a:visited {
+          color: #ffffff;
+          text-decoration: none; }
+        #mabloq-nav ul li a:focus {
+          color: #ffffff;
+          text-decoration: none; }
 
 ul.mabloq-nav-dropdown {
   display: inline-block; }
@@ -68,6 +80,55 @@ ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
 
 .italics {
   font-style: italic; }
+
+.cell img {
+  display: block; }
+  .cell img:hover {
+    cursor: pointer; }
+
+.cell-title {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 5px; }
+
+.cell-desc {
+  color: black;
+  font-family: Helvetica;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-style: italic; }
+  .cell-desc:hover {
+    cursor: pointer; }
+
+.responsive-img {
+  max-width: 100%;
+  height: auto; }
+
+.grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    margin-top: 50px; }
+  .cell {
+    width: 50%; } }
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3); } }
 
 .App {
   text-align: center; }

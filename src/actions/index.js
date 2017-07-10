@@ -4,6 +4,7 @@ export const FETCH_POSTS = 'fetch_posts';
 export const CREATE_POST = 'create_post'
 export const FETCH_POST = 'fetch_post';
 export const DELETE_POST = 'delete_post'
+export const PAGINATE_BLOG = 'paginate_blog';
 
 const ROOT_URL = 'http://jsonplaceholder.typicode.com/posts';
 
@@ -22,6 +23,12 @@ export function createPost(values, callback) {
     type: CREATE_POST,
     payload: request
   };
+}
+export function paginate(request) {
+  return {
+    type: PAGINATE_BLOG,
+    payload: request
+  }
 }
 
 export function fetchPost(id) {

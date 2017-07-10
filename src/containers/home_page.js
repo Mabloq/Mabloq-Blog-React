@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {fetchPosts} from '../actions';
+import {fetchPosts, paginate} from '../actions';
 import {bindActionCreators} from 'redux';
 
 import Nav from '../components/nav_hero';
@@ -21,7 +21,8 @@ class HomePage extends Component {
 
   onChangePage(pageOfItems) {
     // update state with new page of items
-       this.setState({ pageOfItems: pageOfItems });
+    this.setState({ pageOfItems: pageOfItems });
+      // this.props.paginate(pageOfItems);
   }
 
   render() {
@@ -55,7 +56,7 @@ function mapStateToProps(state) {
   };
 }
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({fetchPosts: fetchPosts}, dispatch);
+  return bindActionCreators({fetchPosts: fetchPosts, paginate: paginate}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
