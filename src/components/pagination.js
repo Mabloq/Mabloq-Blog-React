@@ -8,7 +8,7 @@ class Pagination extends Component {
   constructor(props) {
     super(props);
     this.state = {pager: {} };
-
+    // this.initialPage = 1;
   }
 
   componentDidMount() {
@@ -33,18 +33,15 @@ class Pagination extends Component {
     }
 
     //get new pager object for specified pager
-    pager = this.getPager(items.length, page);
+    pager = this.getPager(Object.keys(items).length, page);
 
-
-    this.setState({pager: pager});
-
-
-      //get a new page of iems from items array
-    let pageOfItems = Object.keys(items).map(key => items[key])
-      .filter(val => val.id >= 1 && val.id <= 5);
     //update the state use action with redux instead of setState
     this.setState({pager: pager});
 
+    //get a new page of iems from items array
+    let pageOfItems = Object.keys(items).map(key => items[key])
+      .filter(val => val.id >= pager.startIndex && val.id <= pager.endIndex);
+    console.log(pageOfItems);
     //call change page function from parent component
     this.props.onChangePage(pageOfItems);
   }
@@ -53,11 +50,11 @@ class Pagination extends Component {
     currentPage = currentPage || 1;
 
     // default page size is 10
-    pageSize = pageSize || 10;
+    pageSize = pageSize || 5;
 
     // calculate total pages
     var totalPages = Math.ceil(totalItems / pageSize);
-
+    console.log(totalPages);
     var startPage, endPage;
     if (totalPages <= 10) {
         // less than 10 total pages so show all
@@ -80,7 +77,7 @@ class Pagination extends Component {
     // calculate start and end item indexes
     var startIndex = (currentPage - 1) * pageSize;
     var endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
-
+    console.log(startIndex);
     // create an array of pages to ng-repeat in the pager control
     var pages = _.range(startPage, endPage + 1);
 
@@ -130,5 +127,5 @@ class Pagination extends Component {
   }
 
 }
-
+Pagination.defaultProps
 export default Pagination;
