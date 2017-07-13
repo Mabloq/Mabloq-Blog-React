@@ -6,7 +6,7 @@ import {bindActionCreators} from 'redux';
 import Nav from '../components/nav_hero';
 import Blog from '../components/blog_index';
 import Pagination from '../components/pagination';
-
+import BlogSide from '../components/blog_sidebar';
 class HomePage extends Component {
   constructor() {
     super();
@@ -17,12 +17,14 @@ class HomePage extends Component {
   }
   componentWillMount() {
       this.props.fetchPosts();
+
   }
 
   onChangePage(pageOfItems) {
     // update state with new page of items
+
     this.setState({ pageOfItems: pageOfItems });
-      // this.props.paginate(pageOfItems);
+
   }
 
   render() {
@@ -42,6 +44,8 @@ class HomePage extends Component {
             </div>
             <div className="col-md-3 col-md-offset-1">
               <h2>Categories</h2>
+            <hr />
+              <BlogSide />
             </div>
           </div>
         </div>

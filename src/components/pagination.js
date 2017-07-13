@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import _ from 'lodash';
-// const defaultProps = {
-//   initialPage: 1
-// }
+const defaultProps = {
+  initialPage: 1
+}
 
 class Pagination extends Component {
   constructor(props) {
@@ -54,7 +54,7 @@ class Pagination extends Component {
 
     // calculate total pages
     var totalPages = Math.ceil(totalItems / pageSize);
-    
+    console.log(totalPages);
     var startPage, endPage;
     if (totalPages <= 10) {
         // less than 10 total pages so show all

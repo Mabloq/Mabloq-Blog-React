@@ -16,6 +16,30 @@ class Portfolio extends Component {
               <img className="responsive-img" src={waffle} alt="waffle"/>
               <p className="cell-desc">YOOO YOOOO</p>
             </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
+            <div className="cell">
+              <img className="responsive-img" src={waffle} alt="waffle"/>
+              <p className="cell-desc">YOOO YOOOO</p>
+            </div>
           </div>
         </div>
       </div>

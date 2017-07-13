@@ -130,6 +130,21 @@ ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
   .cell {
     width: calc(100% / 3); } }
 
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+
+.home #mabloq-nav
+li {
+  color: black; }
+
+.home li a {
+  color: black !important; }
+
+.home-img {
+  margin: auto; }
+
 .App {
   text-align: center; }
 

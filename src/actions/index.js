@@ -25,6 +25,7 @@ export function createPost(values, callback) {
   };
 }
 export function paginate(request) {
+
   return {
     type: PAGINATE_BLOG,
     payload: request

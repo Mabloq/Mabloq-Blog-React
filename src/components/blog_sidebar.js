@@ -4,8 +4,24 @@ class BlogSide extends Component {
 
   render() {
     return (
-      <div>
-        <img src=""/>
+      <div className="grid">
+        <div className="cell">
+            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+
+        </div>
+        <div className="cell">
+            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+
+        </div>
+        <div className="cell">
+            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+
+        </div>
+        <div className="cell">
+            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+            
+        </div>
+
       </div>
     );
   }

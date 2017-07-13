@@ -13,7 +13,7 @@ export default function(state = {}, action) {
       return _.mapKeys(action.payload.data, 'id');
     case PAGINATE_BLOG:
       const blogPage = Object.keys(action.payload);
-      return {...state[blogPage]};
+      return {pageOfItems: action.payload.data};
     case DELETE_POST:
       return _.omit(state, action.payload);
     default:

@@ -7,8 +7,8 @@ class Nav extends Component {
     return (
       <nav id="mabloq-nav">
         <ul>
-          <li><Link to="/"> Home</Link></li>
-          <li>Blog</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li>About</li>
         </ul>
