@@ -6,9 +6,8 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
-        <div id="hero">
+        <div className="blog-nav">
           <Nav />
-          <h2 className="hero-title">Portfolio</h2>
         </div>
         <div className="container">
           <div className="grid">
@@ -36,10 +35,7 @@ class Portfolio extends Component {
               <img className="responsive-img" src={waffle} alt="waffle"/>
               <p className="cell-desc">YOOO YOOOO</p>
             </div>
-            <div className="cell">
-              <img className="responsive-img" src={waffle} alt="waffle"/>
-              <p className="cell-desc">YOOO YOOOO</p>
-            </div>
+        
           </div>
         </div>
       </div>

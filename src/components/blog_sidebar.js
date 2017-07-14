@@ -4,22 +4,22 @@ class BlogSide extends Component {
 
   render() {
     return (
-      <div className="grid">
-        <div className="cell">
-            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+      <div className="c-grid">
+        <div className="c-cell">
+            <img className="r-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
 
         </div>
-        <div className="cell">
-            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+        <div className="c-cell">
+            <img className="r-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
 
         </div>
-        <div className="cell">
-            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+        <div className="c-cell">
+            <img className="r-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
 
         </div>
-        <div className="cell">
-            <img className="responsive-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
-            
+        <div className="c-cell">
+            <img className="r-img" src="https://www.fillmurray.com/200/200" alt="yo"/>
+
         </div>
 
       </div>

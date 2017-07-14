@@ -9,20 +9,34 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="home">  =<Nav /></div>
+        <div className="home">
+          <Nav />
+        </div>
 
-        <div className="container">
+        <div className="container page-top">
           <div className="row">
             <div className="col-md-8">
               <img src={waffle} alt="waffle" className="home-img" />
             </div>
             <div className="col-md-4">
               <div className="about-me">
-                <img src={profileImg} alt="waffle" className="profile-img" />
-                <h2>About Me</h2>
+                <div className="img-container">
+                  <img src={profileImg} alt="waffle" className="profile-img" />
+
+                </div>
+                <h2>Matthew Arcila</h2>
+                <p><strong>Front End Developer / Designer</strong></p>
                 <hr/>
-                <p>Pug fanny pack cold-pressed, sustainable schlitz roof party ugh affogato readymade selvage woke direct trade. Twee literally cliche woke, hot chicken photo booth hammock. Green juice chia selfies quinoa glossier. Vegan meggings +1, man braid keffiyeh gochujang hell of ramps succulents live-edge ennui celiac. Vinyl vexillologist swag yr organic authentic artisan. Intelligentsia scenester poutine, squid fanny pack shoreditch mustache austin adaptogen. Vape letterpress godard shoreditch fanny pack, cornhole thundercats chillwave gastropub next level cold-pressed lyft hella meggings. Banh mi hella next level, lomo occupy sriracha bitters palo santo lyft. Cornhole iceland quinoa yuccie lomo pitchfork hexagon 8-bit cray truffaut. Selfies banh mi sustainable migas everyday carry, meditation salvia skateboard letterpress hoodie pitchfork. Lyft master cleanse umami swag whatever.
-Mumblecore pop-up hammock craft beer, waistcoat neutra lomo a</p>
+                <p>Hey, I'm 23 living in the NYC area, When Im not hacking things together with the latest toys and frameworks. Im exploring asian food, running
+                with BAE, watching Westworld, or contributing to the NYC Developer community by hanging out at code meetups.
+                </p>
+                <p>But mostly I'm just eating pizza.</p>
+                <h3>Front End Skills</h3>
+                <p>Javascript (ES6), React / Redux, Jquery</p>
+                <p>HTML5, CSS3, SVG Animations</p>
+                <p>API design /consumption, SPA / MVC web architerctures </p>
+                <h3>Design Skills</h3>
+                <p>Photoshop, Illustrator, Icon Design, UX </p>
               </div>
             </div>
           </div>

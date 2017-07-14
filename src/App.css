@@ -39,6 +39,9 @@ ul.mabloq-nav-dropdown li {
 ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
   display: block; }
 
+.blog-nav {
+  background-color: #ff8a0f; }
+
 .blog-tag {
   margin-right: 5px;
   border-radius: 400px;
@@ -80,6 +83,9 @@ ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
 
 .italics {
   font-style: italic; }
+
+.page-top {
+  margin-top: 50px; }
 
 .cell img {
   display: block; }
@@ -135,6 +141,11 @@ ul.mabloq-nav-dropdown:hover > ul.mabloq-nav-dropdown li {
   height: 200px;
   border-radius: 50%; }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .home #mabloq-nav
 li {
   color: black; }
@@ -143,7 +154,70 @@ li {
   color: black !important; }
 
 .home-img {
-  margin: auto; }
+  display: block;
+  margin: 0 auto;
+  margin-top: 200px; }
+
+.about-me {
+  position: relative;
+  margin: 0 auto; }
+  .about-me h2, .about-me p:first-of-type {
+    text-align: center; }
+  .about-me p:nth-child(1n) {
+    font-size: 18px; }
+  .about-me h2 {
+    color: #ff8a0f; }
+  .about-me h3 {
+    color: #0f9aff; }
+
+.c-cell img {
+  display: block; }
+  .c-cell img:hover {
+    cursor: pointer; }
+
+.c-cell-t {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 5px; }
+
+.c-cell-d {
+  color: black;
+  font-family: Helvetica;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-style: italic; }
+  .c-cell-d:hover {
+    cursor: pointer; }
+
+.r-img {
+  max-width: 100%;
+  height: auto; }
+
+.c-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+@media screen and (min-width: 600px) {
+  .c-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    margin-top: 50px; }
+  .c-cell {
+    width: 50%; } }
+
+@media screen and (min-width: 1000px) {
+  .c-cell {
+    width: calc(100% / 2); } }
 
 .App {
   text-align: center; }

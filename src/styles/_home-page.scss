@@ -2,6 +2,14 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+
+}
+
+.img-container {
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 .home {
@@ -17,5 +25,24 @@
 }
 
 .home-img {
-  margin: auto;
+  display: block;
+  margin:  0 auto;
+  margin-top:200px;
+}
+
+.about-me {
+  position: relative;
+  margin: 0 auto;
+  h2, p:first-of-type {
+    text-align: center;
+  }
+  p:nth-child(1n){
+    font-size: 18px;
+  }
+  h2 {
+    color:rgb(255, 138, 15);
+  }
+  h3 {
+    color:rgb(15, 154, 255)
+  }
 }

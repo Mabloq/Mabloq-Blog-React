@@ -30,11 +30,10 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <div id="hero">
+        <div className="blog-nav">
           <Nav />
-          <h2 className="hero-title">Mabloq</h2>
         </div>
-        <div className="container">
+        <div className="container page-top">
           <div className="row">
             <div className="col-md-8">
               <h2>Recent Posts</h2>

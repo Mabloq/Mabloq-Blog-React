@@ -25,7 +25,9 @@ const config = {
   };
   firebase.initializeApp(config);
 
+const dbRefObject = firebase.database().ref().child('Portfolio');
 
+dbRefObject.on('value', snap => console.log(snap.val()));
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
